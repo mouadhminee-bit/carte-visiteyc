@@ -110,18 +110,8 @@
             <div class="front-inner">
                 <div class="f-brand">
                     <div class="f-logo-row">
-                        <svg width="24" height="29" viewBox="0 0 100 118" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="gF" x1="0%" y1="0%" x2="60%" y2="100%">
-                                    <stop offset="0%" stop-color="#FDE68A"/>
-                                    <stop offset="30%" stop-color="#C9A84C"/>
-                                    <stop offset="70%" stop-color="#9A7828"/>
-                                    <stop offset="100%" stop-color="#C9A84C"/>
-                                </linearGradient>
-                            </defs>
-                            <text x="50" y="72" text-anchor="middle" font-family="'Cormorant Garamond',Georgia,serif" font-size="88" font-weight="600" fill="url(#gF)" letter-spacing="-8">Y</text>
-                            <text x="54" y="98" text-anchor="middle" font-family="'Cormorant Garamond',Georgia,serif" font-size="76" font-weight="600" fill="url(#gF)">C</text>
-                        </svg>
+                        <!-- Logo remplacé par image YCC.PNG -->
+                        <img src="YCC.PNG" alt="YACOUT" style="width:24px; height:auto;">
                         <div>
                             <div class="f-logo-name"><em>YACOUT</em> CONSULTING</div>
                             <div class="f-logo-sub">Conseil en Financement</div>
@@ -170,10 +160,8 @@
                 <div class="back-glow"></div>
                 <div class="back-tl"></div><div class="back-tr"></div><div class="back-bl"></div><div class="back-br"></div>
                 <div class="logo-main">
-                    <svg width="114" height="134" viewBox="0 0 100 118" xmlns="http://www.w3.org/2000/svg">
-                        <text x="50" y="72" text-anchor="middle" font-family="'Cormorant Garamond',Georgia,serif" font-size="88" font-weight="600" fill="#B8944A" letter-spacing="-8">Y</text>
-                        <text x="54" y="98" text-anchor="middle" font-family="'Cormorant Garamond',Georgia,serif" font-size="76" font-weight="600" fill="#B8944A">C</text>
-                    </svg>
+                    <!-- Logo du verso remplacé par image YCC.PNG -->
+                    <img src="YCC.PNG" alt="YACOUT CONSULTING" style="width:114px; height:auto;">
                     <div class="logo-wordmark">
                         <div class="logo-wordmark-name"><em>YACOUT</em> CONSULTING</div>
                         <div class="logo-wordmark-line"></div>
@@ -226,13 +214,9 @@
         const x2 = BLEED + TRIM_W, y2 = BLEED + TRIM_H;
         pdf.setDrawColor(0,0,0);
         pdf.setLineWidth(0.15);
-        // Coins haut-gauche
         pdf.line(x1-mark, y1, x1-0.6, y1); pdf.line(x1, y1-mark, x1, y1-0.6);
-        // haut-droite
         pdf.line(x2+0.6, y1, x2+mark, y1); pdf.line(x2, y1-mark, x2, y1-0.6);
-        // bas-gauche
         pdf.line(x1-mark, y2, x1-0.6, y2); pdf.line(x1, y2+0.6, x1, y2+mark);
-        // bas-droite
         pdf.line(x2+0.6, y2, x2+mark, y2); pdf.line(x2, y2+0.6, x2, y2+mark);
     }
 
